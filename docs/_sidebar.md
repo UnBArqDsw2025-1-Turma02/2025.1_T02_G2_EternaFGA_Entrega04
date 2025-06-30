@@ -9,6 +9,7 @@
       - [4.1.1. Introdução](/ArquiteturaReutilizacao/4.1.1.Introducao.md)
       - [4.1.2. Representação Arquitetural](/ArquiteturaReutilizacao/4.1.2.RepresentacaoArquitetural.md)
       - [4.1.3. Metas e Restrições Arquiteturais](/ArquiteturaReutilizacao/4.1.3.metas.md)
+      - [4.1.4. Visualização Caso de Uso](/ArquiteturaReutilizacao/4.1.4.VisualizacaoCasoUso.md)
       - [4.1.7. Visualização de Deploy](/ArquiteturaReutilizacao/4.1.7.VisualizacaodeDeploy.md)
       - [4.1.8. Visualização de Implementação](/ArquiteturaReutilizacao/4.1.8.VisualizacaodeImplementacao.md)
       - [4.1.10. Tamanho e Desempenho](/ArquiteturaReutilizacao/4.1.10.SizePerformance.md)
