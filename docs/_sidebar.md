@@ -19,6 +19,7 @@
 
     - [4.2. Reutilização de Software](/ArquiteturaReutilizacao/4.2.ReutilizacaoDeSoftware.md)
       - [4.2.1.Definição](/ArquiteturaReutilizacao/4.2.1.Definicao.md)
+      - [4.2.6. Aplicação na Eterna FGA](/ArquiteturaReutilizacao/4.2.6.Aplicacao.md)
     - [4.3. Participações - Arquitetura & Reutilização de Software](/ArquiteturaReutilizacao/4.3.ParticipacoesArqReutilizacao.md)
     - 4.4. Atas de reunião
       - [reunião 26/06](/Atas/reunião2506)

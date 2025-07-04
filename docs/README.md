@@ -22,9 +22,11 @@ A Eterna FGA é um museu afetivo virtual, uma aplicação web criada para eterni
 
 ## Há algo a ser executado?
 
-( ) SIM
+(X) SIM
 
-(X) NÃO
+( ) NÃO
+
+[Como rodar](/docs/ArquiteturaReutilizacao/4.2.6.Aplicacao.md)
 
 ## Histórico de Versão
 
