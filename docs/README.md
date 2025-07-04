@@ -2,7 +2,7 @@
 
 **Código da Disciplina**: FGA0208<br>
 **Número do Grupo**: 02<br>
-**Entrega**: 03<br>
+**Entrega**: 04<br>
 
 ## Alunos
 
@@ -17,8 +17,9 @@
 
 A Eterna FGA é um museu afetivo virtual, uma aplicação web criada para eternizar as memórias da comunidade acadêmica. Nele, qualquer pessoa da comunidade pode enviar suas imagens, compartilhar suas histórias e conhecer um pouco mais sobre as pessoas que fazem parte do cotidiano da faculdade.
 
-## Screenshots da Terceira Entrega
+## Screenshots da Quarta Entrega
 
+![Foto da aplicação](./assets/image.png)
 
 ## Há algo a ser executado?
 
@@ -26,10 +27,10 @@ A Eterna FGA é um museu afetivo virtual, uma aplicação web criada para eterni
 
 ( ) NÃO
 
-[Como rodar](/docs/ArquiteturaReutilizacao/4.2.6.Aplicacao.md)
+[Como rodar](/ArquiteturaReutilizacao/4.2.5.Aplicacao.md)
 
 ## Histórico de Versão
 
 | Versão | Data | Descrição | Autor(es) | Revisor(es) | Comentário do Revisor |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| `1.0` | 25/06/2025  | Versão inicial do README. | Manuella | | |
+| `1.0` | 25/06/2025  | Versão inicial do README. | Manuella | Marcos | Adiconando Screenshots e arrumando o link para como rodar|
