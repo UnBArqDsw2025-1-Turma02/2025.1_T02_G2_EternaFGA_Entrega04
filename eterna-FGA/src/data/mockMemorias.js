@@ -5,7 +5,7 @@ export const mockMemorias = [
       descricao: "Um dia inesquecível, a conclusão de um ciclo e o início de novas jornadas. Muita emoção!",
       imagemUrl: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop",
       dataEnvio: "2024-12-20",
-      categoria: "Formatura"
+      tag: "Formatura"
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ export const mockMemorias = [
       descricao: "Apresentação de projeto na semana de extensão. Muito aprendizado e troca de experiências.",
       imagemUrl: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop",
       dataEnvio: "2025-05-15",
-      categoria: "Acadêmico"
+      tag: "Acadêmico"
     },
     {
       id: 3,
@@ -21,7 +21,7 @@ export const mockMemorias = [
       descricao: "Uma tarde de sol e boas conversas no gramado da FGA. Amizades que a universidade nos deu.",
       imagemUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop",
       dataEnvio: "2025-06-10",
-      categoria: "Social"
+      tag: "Social"
     },
     {
       id: 4,
@@ -29,7 +29,7 @@ export const mockMemorias = [
       descricao: "Foco total para as provas finais. A biblioteca sempre foi nosso refúgio de concentração.",
       imagemUrl: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=2070&auto=format&fit=crop",
       dataEnvio: "2024-11-25",
-      categoria: "Estudo"
+      tag: "Estudo"
     },
   ];
   

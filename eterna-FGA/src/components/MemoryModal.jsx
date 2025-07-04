@@ -45,7 +45,7 @@ function MemoryModal({ memoria, onClose }) {
             />
         </div>
         <div style={memoryModalStyles.details}>
-          <span style={memoryModalStyles.badge}>{memoria.categoria}</span>
+          <span style={memoryModalStyles.badge}>{memoria.tag}</span>
           {/* Usando o estilo 'modalTitle' para evitar conflito */}
           <h2 style={memoryModalStyles.modalTitle}>{memoria.titulo}</h2>
           <p style={memoryModalStyles.description}>{memoria.descricao}</p>

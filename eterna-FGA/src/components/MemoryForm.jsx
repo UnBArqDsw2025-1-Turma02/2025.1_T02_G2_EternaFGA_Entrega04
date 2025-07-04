@@ -29,7 +29,7 @@ function MemoryForm({ isVisible, onClose, onAddMemory }) {
       descricao: description,
       imagemUrl: imagePreview,
       dataEnvio: new Date().toISOString(),
-      categoria: 'Nova',
+      tag: 'Nova',
     };
     onAddMemory(newMemory);
     handleClose();
