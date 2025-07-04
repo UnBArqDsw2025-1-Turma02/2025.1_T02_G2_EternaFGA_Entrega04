@@ -1,10 +1,17 @@
-# RepositorioTemplate
+# Eterna FGA
 
-Repositório que deve ser utilizado como template inicial pelos grupos da matéria de Arquitetura e Desenho de Software.
+**Código da Disciplina**: FGA0208<br>
+**Número do Grupo**: 02<br>
+**Entrega**: 04<br>
 
-## Introdução
+## Alunos
 
-Este repositório traz um template de repo de documentação a ser seguido pelos grupos de arquitetura e desenho de software.
+| Matrícula | Aluno                                   | Github |
+| --------- | --------------------------------------- | --------- |
+| 221008356 | Maria Eduarda Vieira Monteiro           | [DudaV228](https://github.com/DudaV228) |
+| 222021890 | Manuella Magalhães Valadares            | [manuvaladares](https://github.com/manuvaladares)|
+| 222021906 | Marcos Vieira Marinho                   | [devMarcosVM](https://github.com/devMarcosVM)|
+| 222026386 | Pedro Gois Marques Monteiro             | [Goizzz](https://github.com/Goizzz)|
 
 ## Tecnologia
 
