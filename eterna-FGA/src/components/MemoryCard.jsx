@@ -1,23 +1,13 @@
-// MemoryCard.jsx
 import React, { useState } from 'react';
 import { memoryCardStyles } from '../styles/Memory.styles.js';
 
-function MemoryCard({ titulo, descricao, imagemUrl, dataEnvio, categoria = 'Memória' }) {
+function MemoryCard({ onCardClick, ...memoria }) {
+  const { titulo, descricao, imagemUrl, dataEnvio, categoria } = memoria;
   const [isHovered, setIsHovered] = useState(false);
-  const [imageLoaded, setImageLoaded] = useState(false);
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('pt-BR', {
-      day: '2-digit',
-      month: 'short',
-      year: 'numeric'
-    });
-  };
-
-  const handleCardClick = () => {
-    // Aqui você pode adicionar lógica para abrir modal, navegar, etc.
-    console.log('Clicou na memória:', titulo);
+    return date.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
   };
 
   return (
@@ -28,14 +18,11 @@ function MemoryCard({ titulo, descricao, imagemUrl, dataEnvio, categoria = 'Mem�
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      onClick={handleCardClick}
+      onClick={onCardClick} // Ação de clique agora abre o modal
+      onKeyPress={(e) => (e.key === 'Enter' || e.key === ' ') && onCardClick()}
       role="button"
       tabIndex={0}
-      onKeyPress={(e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          handleCardClick();
-        }
-      }}
+      aria-label={`Ver detalhes da memória: ${titulo}`}
     >
       <div style={memoryCardStyles.imageContainer}>
         <img 
@@ -44,27 +31,9 @@ function MemoryCard({ titulo, descricao, imagemUrl, dataEnvio, categoria = 'Mem�
           style={{
             ...memoryCardStyles.image,
             ...(isHovered ? memoryCardStyles.imageHover : {}),
-            opacity: imageLoaded ? 1 : 0,
-            transition: 'opacity 0.3s ease, transform 0.3s ease'
           }}
-          onLoad={() => setImageLoaded(true)}
-          onError={(e) => {
-            e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjVGNUY1Ii8+CjxwYXRoIGQ9Ik0xMDAgMTAwTDEwMCAxMDBaIiBzdHJva2U9IiNDQ0MiIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4K';
-          }}
+          onError={(e) => { e.target.src = 'https://placehold.co/600x400/EEE/31343C?text=Erro'; }}
         />
-        {!imageLoaded && (
-          <div style={{
-            position: 'absolute',
-            inset: 0,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: '#f0f0f0',
-            color: '#999'
-          }}>
-            📸
-          </div>
-        )}
         <div style={memoryCardStyles.badge}>
           {categoria}
         </div>

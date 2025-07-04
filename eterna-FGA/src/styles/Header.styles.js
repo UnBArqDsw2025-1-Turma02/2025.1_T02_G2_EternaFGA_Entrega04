@@ -1,4 +1,3 @@
-// Header.styles.js
 export const headerStyles = {
     header: {
       backgroundColor: '#1B7A9B',

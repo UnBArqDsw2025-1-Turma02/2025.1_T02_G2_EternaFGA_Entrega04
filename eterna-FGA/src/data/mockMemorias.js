@@ -1,7 +1,3 @@
-// src/data/mockMemorias.js
-
-// Dados de exemplo para as memórias.
-// Usamos imagens do Unsplash para um visual mais atraente.
 export const mockMemorias = [
     {
       id: 1,
