@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
+// Importando os estilos corretos
 import { memoryModalStyles } from '../styles/Memory.styles.js';
 
-// Função para formatar a data, pode ser movida para um arquivo de utilitários depois
+// Função para formatar a data
 const formatDate = (dateString) => {
   if (!dateString) return '';
   const date = new Date(dateString);
@@ -20,11 +21,7 @@ function MemoryModal({ memoria, onClose }) {
         onClose();
       }
     };
-
-    // Adiciona o listener quando o modal monta
     window.addEventListener('keydown', handleKeyDown);
-
-    // Remove o listener quando o modal desmonta para evitar memory leaks
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
@@ -35,9 +32,7 @@ function MemoryModal({ memoria, onClose }) {
   }
 
   return (
-    // O overlay escurece o fundo e fecha o modal ao ser clicado
     <div style={memoryModalStyles.overlay} onClick={onClose} role="dialog" aria-modal="true">
-      {/* O container do conteúdo impede que o clique feche o modal */}
       <div style={memoryModalStyles.content} onClick={(e) => e.stopPropagation()}>
         <button style={memoryModalStyles.closeButton} onClick={onClose} aria-label="Fechar modal">
           &times;
@@ -51,7 +46,8 @@ function MemoryModal({ memoria, onClose }) {
         </div>
         <div style={memoryModalStyles.details}>
           <span style={memoryModalStyles.badge}>{memoria.categoria}</span>
-          <h2 style={memoryModalStyles.title}>{memoria.titulo}</h2>
+          {/* Usando o estilo 'modalTitle' para evitar conflito */}
+          <h2 style={memoryModalStyles.modalTitle}>{memoria.titulo}</h2>
           <p style={memoryModalStyles.description}>{memoria.descricao}</p>
           <time style={memoryModalStyles.date}>
             Enviado em {formatDate(memoria.dataEnvio)}
