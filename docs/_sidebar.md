@@ -19,6 +19,8 @@
 
     - [4.2. Reutilização de Software](/ArquiteturaReutilizacao/4.2.ReutilizacaoDeSoftware.md)
       - [4.2.1.Definição](/ArquiteturaReutilizacao/4.2.1.Definicao.md)
+      - [4.2.2.Frameworks](/ArquiteturaReutilizacao/4.2.2.Frameworks.md)
+      - [4.2.3.Exemplo Prático](/ArquiteturaReutilizacao/4.2.3.ExemplosPraticos.md)
       - [4.2.5. Aplicação na Eterna FGA](/ArquiteturaReutilizacao/4.2.5.Aplicacao.md)
     - [4.3. Participações - Arquitetura & Reutilização de Software](/ArquiteturaReutilizacao/4.3.ParticipacoesArqReutilizacao.md)
     - 4.4. Atas de reunião
